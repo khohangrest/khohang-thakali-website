@@ -325,7 +325,9 @@ export default function Home() {
                   <MapPin className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-poppins font-semibold text-foreground">Location</p>
-                    <p className="text-lg text-foreground">Amrit Marg, Thamel</p>
+                    <a href="https://maps.app.goo.gl/VKRuJysd3243hfyN8" target="_blank" rel="noopener noreferrer" className="text-lg text-accent hover:text-secondary transition-colors font-medium">
+                      Amrit Marg, Thamel
+                    </a>
                     <p className="text-sm text-muted-foreground mt-1">Kathmandu, Nepal</p>
                   </div>
                 </div>
