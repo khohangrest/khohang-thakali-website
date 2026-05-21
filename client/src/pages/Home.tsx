@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Mail, ChefHat, Music, Leaf } from "lucide-react";
 import { useState } from "react";
+import { IMAGES } from "@/lib/imageConfig";
 
 /**
  * Khohang - Taste of Thakali Website
@@ -43,7 +44,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/manus-storage/OA01s0q8V1Bb_13c3f4b2.jpg')",
+            backgroundImage: `url(${IMAGES.hero})`,
             backgroundAttachment: "fixed",
           }}
         >
@@ -75,7 +76,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="/manus-storage/d8Kb7s62koiy_e8537051.jpg"
+                src={IMAGES.aboutCourtyard}
                 alt="Khohang courtyard entrance"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -215,7 +216,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                src="/manus-storage/eoSCNYdvfwGX_0c37948b.jpg"
+                src={IMAGES.diningSpace1}
                 alt="Thakali Thali - traditional food platter"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -239,7 +240,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="/manus-storage/7X3NOHljfHNy_9726ff5a.jpg"
+                src={IMAGES.diningSpace2}
                 alt="Traditional Nepali cultural dance performance"
                 className="w-full rounded-lg shadow-lg"
               />
